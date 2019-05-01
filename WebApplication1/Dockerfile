@@ -1,6 +1,3 @@
-#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-#For more information, please see https://aka.ms/containercompat 
-
-FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019
+FROM microsoft/aspnet@sha256:51fdd2a971dcc07d670da477a2f0d6d3c0a6872ea3f0f89226b98b62ccb1c2a1
 WORKDIR /inetpub/wwwroot
 COPY . .
